@@ -1,0 +1,150 @@
+{
+	"id": "f6297ec7-2739-4f79-b5f0-6728a97cac5b",
+	"name": "Meteo",
+	"timestamp": "2022-09-03T09:46:34.516Z",
+	"collection_id": "0-b7f8d48e-7710-469b-82fc-0efd4e433e6c",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ae3c23e6-02cb-4fd1-ad81-8e7687bca060",
+			"name": "1 Hour (Nowcast)",
+			"url": "https://weatherbit-v1-mashape.p.rapidapi.com/forecast/minutely?lat=40.71&lon=-74.00&units=metric&lang=ro",
+			"time": 418,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				418
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "802cdfee-5b13-44f4-bcd5-7bc785a7950e",
+			"name": "Severe Weather Alerts",
+			"url": "https://weatherbit-v1-mashape.p.rapidapi.com/alerts?lat=43.65&lon=-79.38&units=metric&lang=ro",
+			"time": 256,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				256
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0ded1780-8a5a-4cca-9118-0d02024bd734",
+			"name": "16 Day Forecast",
+			"url": "https://weatherbit-v1-mashape.p.rapidapi.com/forecast/daily?lon=-79.38",
+			"time": 245,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				245
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3cda5519-cdcd-4caa-bc65-0ccaac1891f3",
+			"name": "120 Hour Forecast",
+			"url": "https://weatherbit-v1-mashape.p.rapidapi.com/forecast/hourly?units=metric&lang=ro",
+			"time": 265,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				265
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "bd398ac6-5531-4a1b-9bb8-f9921c1d250e",
+			"name": "5 Days Meteo",
+			"url": "https://weatherbit-v1-mashape.p.rapidapi.com/forecast/3hourly?lat=43.65&lon=-79.38&units=metric&lang=ro",
+			"time": 252,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				252
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3c6cdf76-62ed-421d-b18b-7b104af45a36",
+			"name": "Current Weather Data",
+			"url": "https://weatherbit-v1-mashape.p.rapidapi.com/current?lat=43.65&units=metric&lang=ro",
+			"time": 247,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				247
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1683,
+	"collection": {
+		"requests": [
+			{
+				"id": "ae3c23e6-02cb-4fd1-ad81-8e7687bca060",
+				"method": "GET"
+			},
+			{
+				"id": "802cdfee-5b13-44f4-bcd5-7bc785a7950e",
+				"method": "GET"
+			},
+			{
+				"id": "0ded1780-8a5a-4cca-9118-0d02024bd734",
+				"method": "GET"
+			},
+			{
+				"id": "3cda5519-cdcd-4caa-bc65-0ccaac1891f3",
+				"method": "GET"
+			},
+			{
+				"id": "bd398ac6-5531-4a1b-9bb8-f9921c1d250e",
+				"method": "GET"
+			},
+			{
+				"id": "3c6cdf76-62ed-421d-b18b-7b104af45a36",
+				"method": "GET"
+			}
+		]
+	}
+}
